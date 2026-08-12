@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0b0b0d;
+  --panel: #131318;
+  --line: rgba(244, 244, 246, 0.08);
+  --text: #f4f4f6;
+  --muted: #9b9ba8;
+  --accent: #5eead4;
+  --glow-blue: #60a5fa;
+  --glow-violet: #a78bfa;
+
+  /* "Manuscript" paper palette — mirrors the light promo cut.
+     Used for the light demo sheet inset on the dark page. */
+  --paper: #f6f5f1;
+  --paper-line: rgba(11, 11, 13, 0.1);
+  --paper-ink: #15151a;
+  --paper-muted: #57564f;
+  --paper-accent: #0d7268;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-panel: var(--panel);
+  --color-line: var(--line);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-glow-blue: var(--glow-blue);
+  --color-glow-violet: var(--glow-violet);
+
+  --color-paper: var(--paper);
+  --color-paper-line: var(--paper-line);
+  --color-paper-ink: var(--paper-ink);
+  --color-paper-muted: var(--paper-muted);
+  --color-paper-accent: var(--paper-accent);
+
+  --color-background: var(--ink);
+  --color-foreground: var(--text);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-newsreader);
+}
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(94, 234, 212, 0.22);
+  color: var(--text);
+}
+
+a,
+button {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@keyframes pin-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(94, 234, 212, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 7px rgba(94, 234, 212, 0);
+  }
+}
+
+.pin-pulse {
+  animation: pin-pulse 2.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .pin-pulse {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

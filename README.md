@@ -13,7 +13,7 @@ pin time-coded notes onto any [HyperFrames](https://hyperframes.heygen.com) fram
 [![License: MIT](https://img.shields.io/badge/license-MIT-5eead4)](LICENSE)
 [![npm](https://img.shields.io/npm/v/vellum-hf?color=5eead4&logo=npm&logoColor=white)](https://www.npmjs.com/package/vellum-hf)
 [![Node >= 18](https://img.shields.io/badge/node-%E2%89%A5%2018-339933?logo=node.js&logoColor=white)](package.json)
-[![CI](https://github.com/jakeat11labs/vellum/actions/workflows/test.yml/badge.svg)](https://github.com/jakeat11labs/vellum/actions/workflows/test.yml)
+[![CI](https://github.com/jakerains/vellum/actions/workflows/test.yml/badge.svg)](https://github.com/jakerains/vellum/actions/workflows/test.yml)
 [![Made for HyperFrames](https://img.shields.io/badge/made%20for-HyperFrames-0b0b0d)](https://hyperframes.heygen.com)
 
 <br>
@@ -101,7 +101,7 @@ Installs the **commands only**. The curl installer above also sets up the agent 
 **Clone & run**
 
 ```bash
-git clone https://github.com/jakeat11labs/vellum.git
+git clone https://github.com/jakerains/vellum.git
 node /path/to/vellum/scripts/vellum-server.mjs   # from your HF project root
 ```
 
@@ -110,8 +110,8 @@ Or copy `scripts/` (+ `skills/vellum/` for the agent). Prefer a package manager?
 **shadcn registry** (projects already using [shadcn/ui](https://ui.shadcn.com/docs/registry/github)):
 
 ```bash
-npx shadcn@latest add jakeat11labs/vellum/vellum
-npx shadcn@latest add jakeat11labs/vellum/vellum-skill
+npx shadcn@latest add jakerains/vellum/vellum
+npx shadcn@latest add jakerains/vellum/vellum-skill
 ```
 
 Registry install copies files only — add npm scripts yourself, or run `node scripts/vellum-server.mjs` directly. On plain HTML projects without shadcn, the curl installer is simpler.
@@ -195,7 +195,7 @@ The agent then:
 Self-contained composition:
 
 ```bash
-git clone https://github.com/jakeat11labs/vellum.git && cd vellum
+git clone https://github.com/jakerains/vellum.git && cd vellum
 npm i && VELLUM_DIR=examples/demo vellum
 ```
 

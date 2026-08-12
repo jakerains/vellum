@@ -40,9 +40,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jakeat11labs/vellum.git"
+    "url": "git+https://github.com/jakerains/vellum.git"
   },
-  "homepage": "https://github.com/jakeat11labs/vellum#readme",
+  "homepage": "https://github.com/jakerains/vellum#readme",
   "engines": {
     "node": ">=18"
   },

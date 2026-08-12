@@ -11,7 +11,7 @@ import { VERSION } from "./vellum-shared.mjs";
 import * as ui from "./vellum-ui.mjs";
 
 // Source repo. Env-overridable for forks/testing; defaults to the canonical repo.
-const REPO = process.env.VELLUM_REPO || "jakeat11labs/vellum";
+const REPO = process.env.VELLUM_REPO || "jakerains/vellum";
 const REF = process.env.VELLUM_REF || "main";
 const BASE = (process.env.VELLUM_BASE_URL || `https://raw.githubusercontent.com/${REPO}/${REF}`).replace(/\/+$/, "");
 

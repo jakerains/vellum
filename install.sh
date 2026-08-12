@@ -6,7 +6,7 @@
 # Re-runnable; it never overwrites existing package.json scripts.
 set -e
 
-REPO="jakeat11labs/vellum"
+REPO="jakerains/vellum"
 REF="${VELLUM_REF:-main}"
 BASE="${VELLUM_BASE_URL:-https://raw.githubusercontent.com/$REPO/$REF}"
 BASE="${BASE%/}"

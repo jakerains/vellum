@@ -310,4 +310,4 @@ Initial release — a transparent review-and-annotate layer for HyperFrames vide
 ### Security
 - Local-only by design: the server binds to `127.0.0.1`, sends no CORS headers, guards against path traversal, validates and length-caps note input, and invokes external tools (`hyperframes`, `ffmpeg`) with argument arrays only.
 
-[Unreleased]: https://github.com/jakeat11labs/vellum/commits/main
+[Unreleased]: https://github.com/jakerains/vellum/commits/main
