@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.6] - August 12, 2026
+
+An ownership and distribution cleanup. Vellum's canonical repository, installer, package metadata, and website now point directly to Jake Rains's personal GitHub account.
+
+### Changed
+- **Canonical repository moved to `jakerains/vellum`.** npm metadata, clone and registry instructions, CI badges, updater defaults, and the curl installer now use the personal repository directly instead of relying on GitHub's transfer redirect.
+- **The Vellum website now ships from this repository.** Its Next.js source lives under `website/`, deploys through Vercel from that root directory, and serves `/install` from the same canonical source.
+
 ## [0.10.5] - July 27, 2026
 
 A maintenance patch: clearer timeline markers, and Vellum caught up to the current HyperFrames line after its dependency pin had silently frozen 85 releases back. No server or note-format changes.
